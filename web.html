@@ -2,28 +2,33 @@
 <html lang="ru">
 	<head>
 		<title>Web-технологии</title>
-			<meta charset="utf-8"/>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 		<body>
+			<div class="header">
 				<header>
 					<a href="index.html"><img src="webLogo.png" alt="logo" width="210"></a>
 					<h1>Основы Web-технологий</h1>
-						<nav>
-							<ul>
-								<li><a href="index.html">Главная</a></li>
-								<li><a href="web.html">Web-технологии</a>
-									<ul>
-										<li><a href="html5.html">HTML5</a></li>
-										<li><a href="css.html">CSS3</a></li>
-										<li><a href="js.html">JavaScript</a></li>
-									</ul>
-								</li>
-								<li><a href="calc.html">Калькулятор</a></li>
-								<li><a href="test.html">Тест</a></li>
-							</ul>
-						</nav>
+						<div class="nav">
+							<nav>
+								<ul class=menu>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="web.html">Web-технологии</a>
+										<ul class=submenu>
+											<li><a href="html5.html">HTML5</a></li>
+											<li><a href="css.html">CSS3</a></li>
+											<li><a href="js.html">JavaScript</a></li>
+										</ul>
+									</li>
+									<li><a href="calc.html">Калькулятор</a></li>
+									<li><a href="test.html">Тест</a></li>
+								</ul>
+							</nav>
+						</div>
 				</header>
-					<div>
+			</div>
+					<div class="main">
 						<main>
 							<p>Web-технологии можно условно разделить на две пересекающиеся группы: <i>клиентские</i> и <i>серверные</i></p>
 								<ul>
@@ -50,13 +55,11 @@
 								</ul>
 						</main>
 					</div>
-			<footer>
-				<p>
-					<a href="mailto:mail@mail.com">Пишите:mail@mail.com</a>
-				</p>
-					<p>
-						&copy; Овчаров Д.А. 2016
-					</p>
-			</footer>
+			<div class="footer">
+				<footer>
+					<address><a href="mailto:mail@mail.com">Пишите:mail@mail.com</a></address>
+					&copy; Овчаров Д.А. 2016
+				</footer>
+			</div>
 		</body>
 </html>

@@ -2,107 +2,110 @@
 <html lang="ru">
 	<head>
 		<title>Калькулятор</title>
-			<meta charset="utf-8"/>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 		<body>
+			<div class="header">
 				<header>
 					<a href="index.html"><img src="webLogo.png" alt="logo" width="210"></a>
 					<h1>Основы Web-технологий</h1>
-						<nav>
-							<ul>
-								<li><a href="index.html">Главная</a></li>
-								<li><a href="web.html">Web-технологии</a>
-									<ul>
-										<li><a href="html5.html">HTML5</a></li>
-										<li><a href="css.html">CSS3</a></li>
-										<li><a href="js.html">JavaScript</a></li>
-									</ul>
-								</li>
-								<li><a href="calc.html">Калькулятор</a></li>
-								<li><a href="test.html">Тест</a></li>
-							</ul>
-						</nav>
+						<div class="nav">
+							<nav>
+								<ul class=menu>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="web.html">Web-технологии</a>
+										<ul class=submenu>
+											<li><a href="html5.html">HTML5</a></li>
+											<li><a href="css.html">CSS3</a></li>
+											<li><a href="js.html">JavaScript</a></li>
+										</ul>
+									</li>
+									<li><a href="calc.html">Калькулятор</a></li>
+									<li><a href="test.html">Тест</a></li>
+								</ul>
+							</nav>
+						</div>
 				</header>
-					<div>
-						<table border="1">
-							<tr>
-								<td colspan="5">
-									<form id="number">
+			</div>
+					<div class="main">
+						<form id="number">
+							<table>
+								<tr>
+									<td colspan="5">
 										<input type="number" name="number">
-									</form>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="button" name="7"  value="7" />
-								</td>
-								<td>
-									<input type="button" name="8"  value="8" />
-								</td>
-								<td>
-									<input type="button" name="9"  value="9" />
-								</td>
-								<td>
-									<input type="button" name="division"  value="/" />
-								</td>
-								<td>
-									<input type="button" name="c"  value="C" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="button" name="4"  value="4" />
-								</td>
-								<td>
-									<input type="button" name="5"  value="5" />
-								</td>
-								<td>
-									<input type="button" name="6"  value="6" />
-								</td>
-								<td>
-									<input type="button" name="multi"  value="*" />
-								</td>
-								<td>
-									<input type="button" name="pm"  value="&plusmn;" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="button" name="1"  value="1" />
-								</td>
-								<td>
-									<input type="button" name="2"  value="2" />
-								</td>
-								<td>
-									<input type="button" name="3"  value="3" />
-								</td>
-								<td>
-									<input type="button" name="minus"  value="-" />
-								</td>
-								<td rowspan="2">
-									<input type="button" name="equally"  value="=" />
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<input type="button" name="0"  value="0" />
-								</td>
-								<td>
-									<input type="button" name="point"  value="." />
-								</td>
-								<td>
-									<input type="button" name="plus"  value="+" />
-								</td>
-							</tr>
-						</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button form="number" id="seven">7</button>
+									</td>
+									<td>
+										<button form="number" id="eight">8</button>
+									</td>
+									<td>
+										<button form="number" id="nine">9</button>
+									</td>
+									<td>
+										<button form="number" id="division">/</button>
+									</td>
+									<td>
+										<button form="number" id="reset">C</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button form="number" id="four">4</button>
+									</td>
+									<td>
+										<button form="number" id="five">5</button>
+									</td>
+									<td>
+										<button form="number" id="six">6</button>
+									</td>
+									<td>
+										<button form="number" id="multiply">*</button>
+									</td>
+									<td>
+										<button form="number" id="plsmns">&plusmn;</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button form="number" id="one">1</button>
+									</td>
+									<td>
+										<button form="number" id="two">2</button>
+									</td>
+									<td>
+										<button form="number" id="three">3</button>
+									</td>
+									<td>
+										<button form="number" id="minus">-</button>
+									</td>
+									<td rowspan="2">
+										<button form="number" id="equally">=</button>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<button form="number" id="zero">0</button>
+									</td>
+									<td>
+										<button form="number" id="point">.</button>
+									</td>
+									<td>
+										<button form="number" id="plus">+</button>
+									</td>
+								</tr>
+							</table>
+						</form>
 					</div>
-			<footer>
-				<p>
-					<a href="mailto:mail@mail.com">Пишите:mail@mail.com</a>
-				</p>
-					<p>
-						&copy; Овчаров Д.А. 2016
-					</p>
-			</footer>
+			<div class="footer">
+				<footer>
+					<address><a href="mailto:mail@mail.com">Пишите:mail@mail.com</a></address>
+					&copy; Овчаров Д.А. 2016
+				</footer>
+			</div>
 		</body>
 </html>
