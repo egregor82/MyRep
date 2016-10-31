@@ -119,6 +119,7 @@ table{
 	margin-bottom: 2px;
 	margin-left: 1px;
 	margin-right: 1px;
+	/*border: 1px outset buttonface;*/
 }
 
 #number input{
@@ -127,6 +128,7 @@ table{
 	margin-top: 2px;
 	margin-bottom: 2px;
 	border: 1px inset grey;
+	text-align: right;
 }
 
 #zero{

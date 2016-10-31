@@ -33,69 +33,69 @@
 							<table>
 								<tr>
 									<td colspan="5">
-										<input type="number" name="number">
+										<input name="number" id="inp1" value="" disabled>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<button form="number" id="seven">7</button>
+										<button type="button" class="num" id="seven" value="7" value="7">7</button>
 									</td>
 									<td>
-										<button form="number" id="eight">8</button>
+										<button type="button" class="num" id="eight" value="8">8</button>
 									</td>
 									<td>
-										<button form="number" id="nine">9</button>
+										<button type="button" class="num" id="nine" value="9">9</button>
 									</td>
 									<td>
-										<button form="number" id="division">/</button>
+										<button type="button" class="oper" id="division" value="/">/</button>
 									</td>
 									<td>
-										<button form="number" id="reset">C</button>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<button form="number" id="four">4</button>
-									</td>
-									<td>
-										<button form="number" id="five">5</button>
-									</td>
-									<td>
-										<button form="number" id="six">6</button>
-									</td>
-									<td>
-										<button form="number" id="multiply">*</button>
-									</td>
-									<td>
-										<button form="number" id="plsmns">&plusmn;</button>
+										<button type="button" id="reset">C</button>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<button form="number" id="one">1</button>
+										<button type="button" class="num" id="four" value="4">4</button>
 									</td>
 									<td>
-										<button form="number" id="two">2</button>
+										<button type="button" class="num" id="five" value="5">5</button>
 									</td>
 									<td>
-										<button form="number" id="three">3</button>
+										<button type="button" class="num" id="six" value="6">6</button>
 									</td>
 									<td>
-										<button form="number" id="minus">-</button>
+										<button type="button" class="oper" id="multiply" value="*">*</button>
+									</td>
+									<td>
+										<button type="button" id="plsmns">&plusmn;</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button type="button" class="num" id="one" value="1">1</button>
+									</td>
+									<td>
+										<button type="button" class="num" id="two" value="2">2</button>
+									</td>
+									<td>
+										<button type="button" class="num" id="three" value="3">3</button>
+									</td>
+									<td>
+										<button type="button" class="oper" id="minus" value="-">-</button>
 									</td>
 									<td rowspan="2">
-										<button form="number" id="equally">=</button>
+										<button type="button" id="equally">=</button>
 									</td>
 								</tr>
 								<tr>
 									<td colspan="2">
-										<button form="number" id="zero">0</button>
+										<button type="button" class="num" id="zero" value="0">0</button>
 									</td>
 									<td>
-										<button form="number" id="point">.</button>
+										<button type="button" class="num" id="point" value = ".">.</button>
 									</td>
 									<td>
-										<button form="number" id="plus">+</button>
+										<button type="button" class="oper" id="plus" value = "+">+</button>
 									</td>
 								</tr>
 							</table>
@@ -107,5 +107,6 @@
 					&copy; Овчаров Д.А. 2016
 				</footer>
 			</div>
+			<script src="calcscript.js"></script>
 		</body>
 </html>
