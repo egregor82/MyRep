@@ -4,6 +4,7 @@
 		<title>Калькулятор</title>
 			<meta charset="utf-8" />
 			<link rel="stylesheet" type="text/css" href="style.css" />
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 		<body>
 			<div class="header">
@@ -12,10 +13,10 @@
 					<h1>Основы Web-технологий</h1>
 						<div class="nav">
 							<nav>
-								<ul class=menu>
+								<ul class="menu">
 									<li><a href="index.html">Главная</a></li>
 									<li><a href="web.html">Web-технологии</a>
-										<ul class=submenu>
+										<ul class="submenu">
 											<li><a href="html5.html">HTML5</a></li>
 											<li><a href="css.html">CSS3</a></li>
 											<li><a href="js.html">JavaScript</a></li>
@@ -33,12 +34,12 @@
 							<table>
 								<tr>
 									<td colspan="5">
-										<input name="number" id="inp1" value="" disabled>
+										<input name="number" id="inp1" value="" disabled="disabled">
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<button type="button" class="num" id="seven" value="7" value="7">7</button>
+										<button type="button" class="num" id="seven" value="7">7</button>
 									</td>
 									<td>
 										<button type="button" class="num" id="eight" value="8">8</button>
@@ -92,7 +93,7 @@
 										<button type="button" class="num" id="zero" value="0">0</button>
 									</td>
 									<td>
-										<button type="button" class="num" id="point" value = ".">.</button>
+										<button type="button" id="point" value = ".">.</button>
 									</td>
 									<td>
 										<button type="button" class="oper" id="plus" value = "+">+</button>
@@ -107,6 +108,6 @@
 					&copy; Овчаров Д.А. 2016
 				</footer>
 			</div>
-			<script src="calcscript.js"></script>
+			<script src="calcscriptJQ.js"></script>
 		</body>
 </html>
