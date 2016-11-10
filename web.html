@@ -1,39 +1,59 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Web-технологии</title>
+		<title>Тест</title>
 			<meta charset="utf-8" />
-			<link rel="stylesheet" type="text/css" href="style.css" />
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</head>
 		<body>
 			<div class="header">
 				<header>
-					<a href="index.html"><img src="webLogo.png" alt="logo" width="210"></a>
-					<h1>Основы Web-технологий</h1>
-						<div class="nav">
-							<nav>
-								<ul class="menu">
-									<li><a href="index.html">Главная</a></li>
-									<li><a href="web.html">Web-технологии</a>
-										<ul class="submenu">
-											<li><a href="html5.html">HTML5</a></li>
-											<li><a href="css.html">CSS3</a></li>
-											<li><a href="js.html">JavaScript</a></li>
-										</ul>
-									</li>
-									<li><a href="calc.html">Калькулятор</a></li>
-									<li><a href="test.html">Тест</a></li>
-								</ul>
-							</nav>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 col-xs-3 col-xs-3">
+									<a href="index.html"><img src="webLogo.png" alt="logo" class="img-thumbnail img-responsive center-block"></a>
+								</div>
+								<div class="col-lg-9 col-xs-9">
+									<h1>Основы Web-технологий</h1>
+								</div>
+							</div>
 						</div>
-				</header>
+							<div class="nav container">
+								<div class="row">
+									<nav>
+											<div class="col-lg-9 col-xs-9 col-lg-push-3 col-xs-push-3">
+												<ul class="list-inline">
+													<li><a href="index.html">Главная</a></li>
+													<li>
+														<div class="dropdown">
+															<a href="web.html">Web-технологии</a>
+															<a href="web.html" data-toggle="dropdown"><span class="caret"></span></a>
+															<ul class="dropdown-menu">
+																<li><span><a href="html5.html" class="btn btn-link">HTML5</a></span></li>
+																<li><span><a href="css.html" class="btn btn-link">CSS3</a></span></li>
+																<li><span><a href="js.html" class="btn btn-link">JavaScript</a></span></li>
+															</ul>
+														</div>
+													</li>
+													<li><a href="calc.html">Калькулятор</a></li>
+													<li><a href="test.html">Тест</a></li>
+												</ul>
+											</div>
+									</nav>
+								</div>
+							</div>
+					</header>
 			</div>
-					<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="main col-lg-12 text-justify">
 						<main>
 							<p>Web-технологии можно условно разделить на две пересекающиеся группы: <i>клиентские</i> и <i>серверные</i></p>
 								<ul>
 									<li>Клиентские:
-										<dl>
+										<dl class="dl-horizontal">
 											<dt><abbr><b>HTML</b></abbr></dt>
 												<dd>стандартный язык разметки Web-страниц</dd>
 											<dt><abbr><b>CSS</b></abbr></dt>
@@ -43,7 +63,7 @@
 										</dl>
 									</li>
 									<li>Серверные:
-										<dl>
+										<dl class="dl-horizontal">
 											<dt><abbr><b>ASP.NET</b></abbr> <b>(C#)</b></dt>
 												<dd>технология создания Web-приложений от компании Microsoft</dd>
 											<dt><abbr><b>JSP</b></abbr> <b>(Java)</b></dt>
@@ -55,11 +75,19 @@
 								</ul>
 						</main>
 					</div>
-			<div class="footer">
-				<footer>
-					<address><a href="mailto:mail@mail.com">Пишите:mail@mail.com</a></address>
-					&copy; Овчаров Д.А. 2016
-				</footer>
+				</div>
 			</div>
+		<div class="container">
+			<div class="footer">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<footer>
+							<address><a href="mailto:mail@mail.com">Пишите:mail@mail.com</a></address>
+							&copy; Овчаров Д.А. 2016
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
 		</body>
 </html>
